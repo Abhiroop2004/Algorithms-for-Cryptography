@@ -1,7 +1,7 @@
-def extended_euclid(a,b):
+def extended_euclid(a,b): #function to calculate GCD
     (s0,t0,s1,t1)=(1,0,0,1)
     (r0,r1)=a,b
-    while(r1!=0):
+    while(r1!=0): #follows the original mathematical approach implemented with a while loop
         q=r0//r1
         (r0,r1)=(r1,r0-q*r1)
         (s0,s1)=(s1,s0-q*s1)
